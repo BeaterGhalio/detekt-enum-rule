@@ -1,22 +1,20 @@
 plugins {
-    kotlin("jvm") version "1.8.22"
+    kotlin("jvm") version "1.6.10"
     `maven-publish`
 }
 
 group = "org.example.detekt"
-version = "1.0-SNAPSHOT"
+version = "1.1"
 
 dependencies {
-    compileOnly("io.gitlab.arturbosch.detekt:detekt-api:1.22.0")
+    implementation("io.gitlab.arturbosch.detekt:detekt-api:1.22.0")
 
     testImplementation("io.gitlab.arturbosch.detekt:detekt-test:1.22.0")
-    testImplementation("io.kotest:kotest-assertions-core:5.6.2")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
+    testImplementation(kotlin("test-junit5", "1.5.31"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation("io.kotest:kotest-assertions-core:5.4.0")
 }
 
-kotlin {
-    jvmToolchain(8)
-}
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
