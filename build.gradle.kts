@@ -7,7 +7,7 @@ group = "org.example.detekt"
 version = "1.1"
 
 dependencies {
-    implementation("io.gitlab.arturbosch.detekt:detekt-api:1.22.0")
+    implementation("io.gitlab.arturbosch.detekt:detekt-api:1.23.3")
 
     testImplementation("io.gitlab.arturbosch.detekt:detekt-test:1.22.0")
     testImplementation(kotlin("test-junit5", "1.5.31"))
