@@ -12,7 +12,7 @@ dependencies {
     testImplementation("io.gitlab.arturbosch.detekt:detekt-test:1.22.0")
     testImplementation(kotlin("test-junit5", "1.5.31"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-    testImplementation("io.kotest:kotest-assertions-core:5.4.0")
+    testImplementation("io.kotest:kotest-assertions-core:5.8.0")
 }
 
 
